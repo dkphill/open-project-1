@@ -143,7 +143,7 @@ public class UISettingsController : MonoBehaviour
 	}
 	void SaveAudioSettings(float musicVolume, float sfxVolume, float masterVolume)
 	{
-		_currentSettings.SaveAudioSettings(musicVolume, sfxVolume, masterVolume);
+		_currentSettings.SaveAudioSettings(sfxVolume, musicVolume, masterVolume);
 
 		SaveSettingsEvent.RaiseEvent();
 	}
